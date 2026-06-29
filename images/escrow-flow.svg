@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 520" font-family="system-ui, sans-serif">
+  <rect width="750" height="520" fill="#fff" rx="12"/>
+
+  <text x="375" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">Milestone Escrow &amp; Dispute Resolution</text>
+
+  <!-- Step 1: Buyer deposits -->
+  <g transform="translate(60, 60)">
+    <rect x="0" y="0" width="280" height="65" rx="10" fill="#059669"/>
+    <text x="140" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">1. Buyer Deposits Funds</text>
+    <text x="140" y="40" text-anchor="middle" font-size="10" fill="#d1fae5">Funds locked in Escrow smart contract</text>
+    <text x="140" y="55" text-anchor="middle" font-size="10" fill="#d1fae5">— no middleman holds the money</text>
+
+    <!-- Step 2: Freelancer works -->
+    <rect x="0" y="90" width="280" height="65" rx="10" fill="#10b981"/>
+    <text x="140" y="112" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">2. Freelancer Delivers</text>
+    <text x="140" y="130" text-anchor="middle" font-size="10" fill="#d1fae5">Work submitted via milestone</text>
+    <text x="140" y="145" text-anchor="middle" font-size="10" fill="#d1fae5">release on Trestle Marketplace</text>
+
+    <!-- Arrow 1 → 2 -->
+    <path d="M140,65 L140,90" stroke="#a7f3d0" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  </g>
+
+  <!-- Split: Happy path vs Dispute -->
+  <g transform="translate(60, 200)">
+    <!-- Happy path -->
+    <rect x="0" y="0" width="280" height="65" rx="10" fill="#34d399"/>
+    <text x="140" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#065f46">3a. Buyer Approves ✅</text>
+    <text x="140" y="40" text-anchor="middle" font-size="10" fill="#065f46">Buyer confirms milestone complete</text>
+    <text x="140" y="55" text-anchor="middle" font-size="10" fill="#065f46">Funds released to freelancer instantly</text>
+
+    <!-- Dispute path -->
+    <rect x="310" y="0" width="280" height="65" rx="10" fill="#f59e0b"/>
+    <text x="450" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">3b. Dispute Raised ⚖️</text>
+    <text x="450" y="40" text-anchor="middle" font-size="10" fill="#fef3c7">Buyer or freelancer flags dispute</text>
+    <text x="450" y="55" text-anchor="middle" font-size="10" fill="#fef3c7">Funds remain locked in escrow</text>
+
+    <!-- Split from step 2 -->
+    <path d="M140,65 L140,0" stroke="#a7f3d0" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+    <path d="M140,0 L310,0" stroke="#f59e0b" stroke-width="2" fill="none"/>
+    <path d="M310,0 L310,0" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowAmber)" fill="none"/>
+  </g>
+
+  <!-- Row 4: Resolution -->
+  <g transform="translate(60, 310)">
+    <rect x="310" y="0" width="280" height="80" rx="10" fill="#f97316"/>
+    <text x="450" y="20" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">4. Decentralized Resolution</text>
+    <text x="450" y="38" text-anchor="middle" font-size="10" fill="#ffedd5">Kleros jury pool reviews evidence</text>
+    <text x="450" y="53" text-anchor="middle" font-size="10" fill="#ffedd5">AI (Llama/Mixtral) analyzes</text>
+    <text x="450" y="68" text-anchor="middle" font-size="10" fill="#ffedd5">submissions and recommends outcome</text>
+
+    <!-- Arrow dispute → resolution -->
+    <path d="M450,65 L450,0" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowAmber)" fill="none"/>
+  </g>
+
+  <!-- Row 5: Outcome -->
+  <g transform="translate(60, 425)">
+    <rect x="80" y="0" width="200" height="55" rx="10" fill="#ef4444"/>
+    <text x="180" y="20" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Refund Buyer</text>
+    <text x="180" y="38" text-anchor="middle" font-size="10" fill="#fecaca">Funds returned if work</text>
+    <text x="180" y="51" text-anchor="middle" font-size="10" fill="#fecaca">doesn't meet requirements</text>
+
+    <rect x="370" y="0" width="200" height="55" rx="10" fill="#059669"/>
+    <text x="470" y="20" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Release to Freelancer</text>
+    <text x="470" y="38" text-anchor="middle" font-size="10" fill="#d1fae5">Payment released if work</text>
+    <text x="470" y="51" text-anchor="middle" font-size="10" fill="#d1fae5">meets milestone criteria</text>
+
+    <!-- Split from resolution -->
+    <path d="M450,80 L450,100 L280,100 L280,0" stroke="#f97316" stroke-width="2" marker-end="url(#arrowRed)" fill="none"/>
+    <path d="M450,100 L470,100 L470,0" stroke="#f97316" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  </g>
+
+  <!-- Info box -->
+  <g transform="translate(60, 500)">
+    <text x="10" y="14" font-size="10" fill="#059669">● AI dispute analysis is advisory — final ruling by community jurors (Kleros)</text>
+  </g>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#10b981"/>
+    </marker>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#ef4444"/>
+    </marker>
+  </defs>
+</svg>

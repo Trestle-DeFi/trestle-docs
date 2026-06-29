@@ -1,0 +1,133 @@
+site_name: Trestle DeFi Documentation
+site_url: https://docs.trestle.website
+site_description: Official documentation for the Trestle Decentralized Marketplace & Protocol
+site_author: Trestle Protocol
+
+repo_name: Trestle-DeFi
+repo_url: https://github.com/Trestle-DeFi/trestle-docs
+
+# Theme Configuration
+theme:
+  name: material
+  logo: assets/logo.svg # Optional: Add your logo to docs/assets/
+  favicon: assets/favicon.svg
+  palette:
+    # Light Mode (Default)
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    # Dark Mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
+    - announce.dismiss
+
+# Navigation Structure (Auto-updated via Git)
+nav:
+  - Home: index.md
+  
+  - Getting Started:
+    - Introduction: getting-started/intro.md
+    - Wallet Setup: getting-started/wallet.md
+    - Testnet Faucet: getting-started/faucet.md
+
+  - Core Protocol:
+    - Overview: protocol/overview.md
+    - Tokenomics:
+        - 3-Token System: protocol/tokenomics.md
+        - Dynamic Emissions (60% Mining): protocol/emissions.md
+        - Governance Model: protocol/governance.md
+    - Staking & Mining:
+        - hNOBT Staking: protocol/staking-hnobt.md
+        - BroilerPlus LP Mining: protocol/staking-broiler.md
+        - Vault Mechanics: protocol/vault.md
+
+  - Marketplace:
+    - Overview: marketplace/overview.md
+    - Dutch Auction Logic: marketplace/dutch-auction.md
+    - Escrow & Disputes: marketplace/escrow.md
+    - AI Integration: marketplace/ai-matching.md
+
+  - Real-World Assets (RWA):
+    - Roadmap: rwa/roadmap.md
+    - Tokenization Standards: rwa/standards.md
+    - Compliance: rwa/compliance.md
+
+  - Technical Architecture:
+    - Cloudflare Workers: tech/architecture.md
+    - API Endpoints: tech/api.md
+    - Smart Contracts:
+        - Mainnet Contracts: tech/contracts-mainnet.md
+        - Testnet Contracts: tech/contracts-testnet.md
+        - Audit Status: tech/audit.md
+
+  - Community & Security:
+    - Security Model: community/security.md
+    - Bug Bounty (Points): community/bounty.md
+    - Governance Proposals: community/governance.md
+
+# Plugins
+plugins:
+  - search:
+      lang: en
+  - redirects:
+      redirect_maps:
+        'docs.md': 'index.md'
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+# Extra CSS for SVG handling
+extra_css:
+  - assets/styles.css

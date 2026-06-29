@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="system-ui, sans-serif">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#059669"/><stop offset="100%" stop-color="#047857"/></linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#10b981"/><stop offset="100%" stop-color="#059669"/></linearGradient>
+    <linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#34d399"/><stop offset="100%" stop-color="#10b981"/></linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="#f8fafc" rx="12"/>
+
+  <text x="400" y="40" text-anchor="middle" font-size="20" font-weight="bold" fill="#1e293b">Trestle DeFi Flywheel</text>
+
+  <!-- Stake - hNOBT -->
+  <rect x="250" y="60" width="300" height="130" rx="12" fill="url(#g1)" opacity="0.95"/>
+  <text x="400" y="95" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">Stake: hNOBT</text>
+  <text x="400" y="118" text-anchor="middle" font-size="12" fill="#d1fae5">Community Growth Token</text>
+  <text x="400" y="142" text-anchor="middle" font-size="11" fill="#a7f3d0">Distributed via Telegram Mini-App</text>
+  <text x="400" y="158" text-anchor="middle" font-size="11" fill="#a7f3d0">Tasks · Referrals · Airdrops</text>
+  <text x="400" y="178" text-anchor="middle" font-size="11" fill="#a7f3d0">Spent on digital goods &amp; profile boosts</text>
+
+  <!-- Arrow Stake→Mine -->
+  <text x="400" y="210" text-anchor="middle" font-size="22" fill="#059669">&#x2193;</text>
+
+  <!-- Mine - BroilerPlus -->
+  <rect x="200" y="225" width="400" height="130" rx="12" fill="url(#g2)" opacity="0.95"/>
+  <text x="400" y="260" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">Mine: BroilerPlus</text>
+  <text x="400" y="283" text-anchor="middle" font-size="12" fill="#d1fae5">Liquidity Anchor Token</text>
+  <text x="400" y="307" text-anchor="middle" font-size="11" fill="#a7f3d0">Stake BRT/WPOL LP to earn BRT rewards</text>
+  <text x="400" y="323" text-anchor="middle" font-size="11" fill="#a7f3d0">Deep liquidity on Polygon since 2021</text>
+  <text x="400" y="343" text-anchor="middle" font-size="11" fill="#a7f3d0">LP Mining · Staking Rewards</text>
+
+  <!-- Arrow Mine→Vault -->
+  <text x="400" y="375" text-anchor="middle" font-size="22" fill="#10b981">&#x2193;</text>
+
+  <!-- Vault - Governance Token -->
+  <rect x="150" y="390" width="500" height="130" rx="12" fill="url(#g3)" opacity="0.95"/>
+  <text x="400" y="425" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">Vault: Governance Token</text>
+  <text x="400" y="448" text-anchor="middle" font-size="12" fill="#d1fae5">Value Capture Token</text>
+  <text x="400" y="472" text-anchor="middle" font-size="11" fill="#a7f3d0">Earned through Vault staking</text>
+  <text x="400" y="488" text-anchor="middle" font-size="11" fill="#a7f3d0">Earns % of marketplace transaction fees</text>
+  <text x="400" y="508" text-anchor="middle" font-size="11" fill="#a7f3d0">Voting rights · Protocol governance</text>
+
+  <!-- Bottom note -->
+  <rect x="250" y="545" width="300" height="35" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="400" y="567" text-anchor="middle" font-size="11" fill="#475569">Self-sustaining economic engine</text>
+</svg>

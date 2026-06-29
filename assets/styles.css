@@ -1,0 +1,35 @@
+/* Trestle DeFi Documentation Styles */
+
+/* Ensure SVG images display properly */
+img[src$=".svg"] {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Code block styling for Solidity */
+.highlight {
+    border-radius: 4px;
+    margin: 1em 0;
+}
+
+/* Tables */
+.md-typeset table {
+    width: 100%;
+    margin: 1em 0;
+}
+
+/* Callouts for status badges */
+.status-live {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.status-dev {
+    color: #1565c0;
+    font-weight: bold;
+}
+
+.status-beta {
+    color: #7b1fa2;
+    font-weight: bold;
+}
