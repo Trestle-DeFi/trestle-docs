@@ -14,15 +14,15 @@ theme:
   palette:
     # Light Mode (Default)
     - scheme: default
-      primary: blue
-      accent: blue
+      primary: green
+      accent: green
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
     # Dark Mode
     - scheme: slate
-      primary: blue
-      accent: blue
+      primary: green
+      accent: green
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
@@ -35,7 +35,7 @@ theme:
     - search.highlight
     - search.share
     - content.code.copy
-    - content.action.edit
+    # - content.action.edit  # disabled — prevents direct GitHub editing from docs pages
     - announce.dismiss
 
 # Navigation Structure (Auto-updated via Git)
@@ -128,6 +128,20 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
 
-# Extra CSS for SVG handling
+# Extra CSS
 extra_css:
   - assets/styles.css
+
+# Footer
+copyright: Copyright &copy; 2026 Trestle DeFi
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Trestle-DeFi
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/4dCCvnJYGT
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/trestleDeFi
+    - icon: fontawesome/solid/globe
+      link: https://trestle.website

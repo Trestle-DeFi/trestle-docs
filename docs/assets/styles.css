@@ -1,3 +1,10 @@
+:root {
+  --md-primary-fg-color:        #059669;
+  --md-primary-fg-color--light: #34d399;
+  --md-primary-fg-color--dark:  #047857;
+  --md-accent-fg-color:         #059669;
+}
+
 /* Trestle DeFi Documentation Styles */
 
 /* Ensure SVG images display properly */
@@ -20,16 +27,16 @@ img[src$=".svg"] {
 
 /* Callouts for status badges */
 .status-live {
-    color: #2e7d32;
+    color: #059669;
     font-weight: bold;
 }
 
 .status-dev {
-    color: #1565c0;
+    color: #1d4ed8;
     font-weight: bold;
 }
 
 .status-beta {
-    color: #7b1fa2;
+    color: #7c3aed;
     font-weight: bold;
 }
