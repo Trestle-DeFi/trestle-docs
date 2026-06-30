@@ -26,11 +26,17 @@ docs-trestle-website/
 ## Development
 
 ```bash
-pip install mkdocs-material
+pip install -r requirements.txt
 mkdocs serve    # http://localhost:8000
-mkdocs build    # Build static site
-mkdocs gh-deploy --force  # Deploy to GitHub Pages
+mkdocs build    # Build static site (outputs to site/)
 ```
+
+## Deploy (Cloudflare Pages)
+
+Auto-deploys on push to `main`. Configure in Cloudflare dashboard:
+
+- **Build command**: `pip install -r requirements.txt && mkdocs build`
+- **Publish directory**: `site/`
 
 ## Deployed Contracts
 
